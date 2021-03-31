@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/hue.png">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Button | Hue UI</title>
+</head>
+
+<body>
+    <main class="main">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="getting-started.html"> Getting Started </a>
+            <a href="avatar.html"> Avatar </a>
+            <a href="alert.html"> Alert </a>
+            <a href="badge.html"> Badge </a>
+            <a href="button.html" class="active"> Button </a>
+            <a href="card.html"> Card </a>
+            <a href="image.html"> Image </a>
+            <a href="input.html"> Input </a>
+            <a href="modal.html"> Modal </a>
+			<a href="list.html"> List </a>
+        <a href="rating.html"> Rating </a>
+        <a href="utilities.html"> Utilities </a>
+        <a href="navigation.html"> Navigation </a>
+		<a href="grid.html"> Grid </a>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-logo">
+                <a href="index.html">HUE UI</a>
+            </div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+        </div>
+
+
+
+        <div class="main-topic">
+            <h1>Button</h1>
+            <h4>Buttons allow users to take actions, and make choices, with a single tap.</h4>
+        </div>
+        <div class="main-content">
+            <div class="main-content__box">
+                <div class="box-heading">Contained Buttons</div>
+                <div class="box-description">Contained buttons are high-emphasis, distinguished by their use of
+                    elevation and fill. They contain actions that are primary to your app</div>
+                <div class="button-container">
+                    <button class="btn">Default</button>
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-disabled">Disabled</button>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%253EDefault%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-disabled%2522%253EDisabled%253C%252Fbutton%253E"
+                        style="width: 389px; height: 145px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Outlined Buttons</div>
+                <div class="box-description">Outlined buttons are medium-emphasis buttons. They contain actions that are
+                    important, but aren’t the primary action in an app.
+                </div>
+                <div class="box-description">
+                    Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis
+                    alternative to text buttons.
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-primary-outline">Primary</button>
+                    <button class="btn btn-secondary-outline">Secondary</button>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary-outline%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2522%253ESecondary%253C%252Fbutton%253E"
+                        style="width: 443px; height: 110px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Text Buttons</div>
+                <div class="box-description">Text buttons are typically used for less-pronounced actions, including
+                    those located in dialogs or in cards.
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-primary-text">Primary</button>
+                    <button class="btn btn-secondary-text">Secondary</button>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary-text%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary-text%2522%253ESecondary%253C%252Fbutton%253E"
+                        style="width: 423px; height: 110px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Sizes</div>
+                <div class="box-description">Fancy larger or smaller buttons? Use the size property.</div>
+                <div class="button-container">
+                    <button class="btn btn-primary btn-sm">Small</button>
+                    <button class="btn btn-primary btn-lg">Large</button>
+                    <button class="btn btn-secondary btn-sm">Small</button>
+                    <button class="btn btn-secondary btn-lg">Large</button>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sm%2522%253ESmall%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253ELarge%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-sm%2522%253ESmall%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-lg%2522%253ELarge%253C%252Fbutton%253E"
+                        style="width: 410px; height: 145px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Buttons with icons</div>
+                <div class="box-description">Sometimes you might want to have icons for certain button to enhance the UX
+                    of the application as we recognize logos more easily than plain text. For example, if you have a
+                    delete button you can label it with a dustbin icon.</div>
+                <div class="button-container">
+                    <button class="btn btn-secondary-icon">
+                        <span class="material-icons-outlined">
+                            delete_outline
+                        </span>
+                        Delete
+                    </button>
+                    <button class="btn btn-primary-icon">
+                        Send
+                        <span class="material-icons-outlined">
+                            send
+                        </span>
+                    </button>
+                    <button class="btn btn-icon">
+                        <span class="material-icons-outlined">
+                            cloud_upload
+                        </span>
+                        Upload
+                    </button>
+                    <button class="btn btn-primary-icon">
+                        <span class="material-icons-outlined">
+                            save
+                        </span>
+                        Save
+                    </button>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-secondary-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509delete_outline%250A%2509%253C%252Fspan%253E%250A%2509Delete%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary-icon%2522%253E%250A%2509Send%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509send%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509cloud_upload%250A%2509%253C%252Fspan%253E%250A%2509Upload%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary-icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509save%250A%2509%253C%252Fspan%253E%250A%2509Save%250A%253C%252Fbutton%253E"
+                        style="width: 322px; height: 497px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Floating Action Buttons</div>
+                <div class="box-description">Icons are also appropriate for toggle buttons that allow a single choice to
+                    be selected or deselected, such as adding or removing a star to an item.</div>
+                <div class="button-container">
+                    <button class="btn btn-secondary btn-floating">
+                        <span class="material-icons-outlined">
+                            add
+                        </span>
+                    </button>
+                    <button class="btn btn-primary btn-floating">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </button>
+                    <button class="btn btn-secondary btn-floating">
+                        <span class="material-icons-outlined">
+                            delete_outline
+                        </span>
+                    </button>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509add%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509edit%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509delete_outline%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                        style="width: 355px; height: 338px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

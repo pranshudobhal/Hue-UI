@@ -1,0 +1,148 @@
+/* Side Navbar Styles Start */
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  padding: 1rem;
+  z-index: 500;
+  @include transition-ease;
+}
+
+.menu-logo a {
+  color: $secondary-color;
+  font-size: 1.75rem;
+}
+
+.menu-btn {
+  position: relative;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  @include transition-ease;
+
+  &__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: $primary-color;
+    @include transition-ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background: $primary-color;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 20px;
+      height: 3px;
+      background: $primary-color;
+      @include transition-ease;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+        background: $primary-color;
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 5.75rem;
+  @include transition-ease;
+  border-left: 1px solid $border-color;
+
+  &.open {
+    width: 65vw;
+  }
+
+  @include media-md {
+    &.open {
+      width: 30vw;
+    }
+  }
+}
+
+.sidenav a {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: $primary-color;
+  display: block;
+  @include transition-ease;
+  font-weight: 400;
+}
+
+.sidenav a:first-child {
+  font-size: 1.5rem;
+}
+
+.sidenav a:hover {
+  color: $secondary-color;
+  background-color: $btn-secondary-text-hover;
+}
+
+a.active {
+  color: $secondary-color;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+@include media-md {
+  .sidenav {
+    padding-top: 7.5rem;
+  }
+
+  .sidenav a {
+    width: 15vw;
+  }
+
+  .sidenav a:hover {
+    color: $secondary-color;
+    background-color: $btn-secondary-text-hover;
+    width: 15vw;
+  }
+}
+
+/* Side Navbar Styles End */

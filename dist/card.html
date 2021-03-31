@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/hue.png">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Card | Hue UI</title>
+</head>
+
+<body>
+    <main class="main">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="getting-started.html"> Getting Started </a>
+            <a href="avatar.html"> Avatar </a>
+            <a href="alert.html"> Alert </a>
+            <a href="badge.html"> Badge </a>
+            <a href="button.html"> Button </a>
+            <a href="card.html" class="active"> Card </a>
+            <a href="image.html"> Image </a>
+            <a href="input.html"> Input </a>
+            <a href="modal.html"> Modal </a>
+            <a href="list.html"> List </a>
+            <a href="rating.html"> Rating </a>
+            <a href="utilities.html"> Utilities </a>
+            <a href="navigation.html"> Navigation </a>
+            <a href="grid.html"> Grid </a>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-logo">
+                <a href="index.html">HUE UI</a>
+            </div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+        </div>
+
+        <div class="main-topic">
+            <h1>Card</h1>
+            <h4>Cards contain content and actions about a single subject.</h4>
+        </div>
+        <div class="main-content">
+            <div class="main-content__box">
+                <div class="box-heading">Simple Text Card</div>
+                <div class="box-description">A text only card with action button.</div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+                                ullam!
+                            </p>
+                            <button class="btn btn-primary">
+                                <a href="#">Button</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-title%2522%253ECard%2520Title%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-text%2522%253ELorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Porro%252C%2520ullam%21%253C%252Fp%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2509%2509%2509%253Ca%2520href%253D%2522%2523%2522%253EButton%253C%252Fa%253E%250A%2509%2509%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 740px; height: 233px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="box-heading">Image Card</div>
+                <div class="box-description">A card with image and text and a favourite button.</div>
+                <div class="card-container">
+                    <div class="card card-image">
+                        <div class="card-header">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1ca905d1-cd98-4ba5-ac54-b19099349653/mercurial-dream-speed-superfly-8-academy-mg-multi-ground-football-boot-qMZ9DB.jpg"
+                                alt="Card Image">
+                            <span class="material-icons-outlined">
+                                favorite_border
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Mercurial Dream Speed Superfly 8 Academy MG</h5>
+                            <p class="card-text">
+                                Multi-Ground Football Boot
+                            </p>
+                            <div class="card-price">
+                                ₹ 8,995
+                            </div>
+                            <button class="btn btn-primary">
+                                <a href="#">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-image%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509%2509favorite_border%250A%2509%2509%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Ch5%2520class%253D%2522card-title%2522%253ENike%2520Mercurial%2520Dream%2520Speed%2520Superfly%25208%2520Academy%2520MG%253C%252Fh5%253E%250A%2509%2509%253Cp%2520class%253D%2522card-text%2522%253EMulti-Ground%2520Football%2520Boot%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-price%2522%253E%25E2%2582%25B9%25208%252C995%253C%252Fdiv%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2509%2509%2509%253Ca%2520href%253D%2522%2523%2522%253EAdd%2520to%2520Cart%253C%252Fa%253E%250A%2509%2509%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 605px; height: 356px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+
+                <div class="box-heading">Horizontal Card</div>
+                <div class="box-description">A horizontal card with image and text.</div>
+                <div class="card-container">
+                    <div class="card card-horizontal">
+                        <div class="card-header">
+                            <img class="img-responsive"
+                                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1ca905d1-cd98-4ba5-ac54-b19099349653/mercurial-dream-speed-superfly-8-academy-mg-multi-ground-football-boot-qMZ9DB.jpg"
+                                alt="Card Image">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-details">
+                                <h5 class="card-title">Nike Mercurial</h5>
+                                <p class="card-text">
+                                    Multi-Ground Football Boot
+                                </p>
+                                <div class="card-text">
+                                    <div class="select custom-select"></div>
+                                    <label for="size">Size</label>
+                                    <select name="size" id="size">
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+
+                                    <div class="select custom-select1"></div>
+                                    <label for="quantity">Quantity</label>
+                                    <select name="quantity" id="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+
+                                </div>
+                                <button class="btn btn-primary-text">
+                                    Remove
+                                </button>
+                            </div>
+                            <div class="card-price">
+                                ₹ 8,995
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522img-responsive%2522%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-details%2522%253E%250A%2509%2509%2509%253Ch5%2520class%253D%2522card-title%2522%253ENike%2520Mercurial%253C%252Fh5%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card-text%2522%253E%250A%2509%2509%2509%2509Multi-Ground%2520Football%2520Boot%250A%2509%2509%2509%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522custom-select%2522%253E%253C%252Fdiv%253E%250A%2509%2509%2509%2509%253Clabel%2520for%253D%2522size%2522%253ESize%253C%252Flabel%253E%250A%2509%2509%2509%2509%2509%253Cselect%2520name%253D%2522size%2522%2520id%253D%2522size%2522%253E%250A%2509%2509%2509%2509%2509%2509%253Coption%2520value%253D%25225%2522%253E5%253C%252Foption%253E%250A%2509%2509%2509%2509%2509%2509%253Coption%2520value%253D%25226%2522%253E6%253C%252Foption%253E%250A%2509%2509%2509%2509%2509%2509%253Coption%2520value%253D%25227%2522%253E7%253C%252Foption%253E%250A%2509%2509%2509%2509%2509%253C%252Fselect%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522custom-select1%2522%253E%253C%252Fdiv%253E%250A%2509%2509%2509%2509%253Clabel%2520for%253D%2522quantity%2522%253EQuantity%253C%252Flabel%253E%250A%2509%2509%2509%2509%2509%253Cselect%2520name%253D%2522quantity%2522%2520id%253D%2522quantity%2522%253E%250A%2509%2509%2509%2509%2509%2509%253Coption%2520value%253D%25221%2522%253E1%253C%252Foption%253E%250A%2509%2509%2509%2509%2509%2509%253Coption%2520value%253D%25222%2522%253E2%253C%252Foption%253E%250A%2509%2509%2509%2509%2509%2509%253Coption%2520value%253D%25223%2522%253E3%253C%252Foption%253E%250A%2509%2509%2509%2509%2509%2509%253Coption%2520value%253D%25224%2522%253E4%253C%252Foption%253E%250A%2509%2509%2509%2509%2509%253C%252Fselect%253E%250A%2509%2509%2509%253C%252Fdiv%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary-text%2522%253E%250A%2509%2509%2509%2509Remove%250A%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card-price%2522%253E%250A%2509%2509%2509%25E2%2582%25B9%25208%252C995%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 430px; height: 708px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

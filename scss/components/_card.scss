@@ -1,0 +1,199 @@
+/* Card Component Styles Start */
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: $card-shadow;
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+
+  &-title {
+    font-size: 1.25rem;
+  }
+
+  &-text {
+    font-size: 0.875rem;
+    padding: 1.25rem 0;
+  }
+
+  &#{&}-image {
+    .card-header {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      span {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+
+        &:hover {
+          color: #ef4444;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .card-title {
+      color: $card-title-color;
+      font-weight: 400;
+      font-size: 0.875rem;
+      padding: 0.5rem 0 0;
+    }
+
+    .card-text {
+      font-weight: 400;
+      color: $card-para-color;
+      font-size: 0.875rem;
+      padding: 0.25rem 0 2rem;
+    }
+
+    .card-price {
+      font-weight: 400;
+      color: $card-title-color;
+      font-size: 0.875rem;
+      padding: 0 0 1rem;
+    }
+  }
+
+  &#{&}-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+
+    .card-header {
+      width: 25%;
+    }
+
+    .card-body {
+      width: 75%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card-details {
+      padding-left: 0.5rem;
+      width: 80%;
+
+      button {
+        padding: 0.5rem 0;
+        background-color: $white;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          border-bottom: 1px solid $primary-color;
+          left: 0;
+          bottom: 0;
+          width: 0%;
+          @include transition-ease;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+
+    .card-title {
+      color: $card-title-color;
+      font-weight: 400;
+      font-size: 0.875rem;
+      padding: 0.5rem 0 0;
+    }
+
+    .select {
+      font-weight: 400;
+      padding: 0 0.75rem 0 1rem;
+      position: absolute;
+      right: 0;
+      text-align: right;
+      color: $card-para-color;
+      z-index: -1;
+    }
+
+    .custom-select {
+      &::before {
+        font-family: 'Material Icons';
+        content: '\e5cf';
+        color: $primary-color;
+        position: absolute;
+        right: -0.25rem;
+
+        @include media-md {
+          right: 0.5rem;
+        }
+      }
+    }
+
+    .custom-select1 {
+      &::before {
+        font-family: 'Material Icons';
+        content: '\e5cf';
+        position: absolute;
+        right: 6.75rem;
+        color: $primary-color;
+
+        @include media-md {
+          right: 7.5rem;
+        }
+      }
+    }
+
+    .card-text select {
+      padding-left: 0.625rem;
+      height: 100%;
+      width: max-content;
+      padding-right: 2rem;
+      min-height: inherit;
+      font-size: 0.875rem;
+      color: $card-para-color;
+      background: none;
+      border: 0px;
+      border-radius: 2px;
+      appearance: none;
+    }
+
+    .card-text {
+      font-weight: 400;
+      color: $card-para-color;
+      font-size: 0.875rem;
+      padding: 0.25rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .card-price {
+      font-weight: 400;
+      color: $card-title-color;
+      font-size: 0.875rem;
+      padding: 0 0 1rem;
+    }
+  }
+}
+
+@include media-md {
+  div.card-text {
+    width: 70%;
+  }
+}
+
+/* Card Component Styles End */

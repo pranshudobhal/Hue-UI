@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/hue.png">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Badge | Hue UI</title>
+</head>
+
+<body>
+
+    <main class="main">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="getting-started.html"> Getting Started </a>
+            <a href="avatar.html"> Avatar </a>
+            <a href="alert.html"> Alert </a>
+            <a href="badge.html" class="active"> Badge </a>
+            <a href="button.html"> Button </a>
+            <a href="card.html"> Card </a>
+            <a href="image.html"> Image </a>
+            <a href="input.html"> Input </a>
+            <a href="modal.html"> Modal </a>
+			<a href="list.html"> List </a>
+        <a href="rating.html"> Rating </a>
+        <a href="utilities.html"> Utilities </a>
+        <a href="navigation.html"> Navigation </a>
+		<a href="grid.html"> Grid </a>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-logo">
+                <a href="index.html">HUE UI</a>
+            </div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+        </div>
+
+
+        <div class="main-topic">
+            <h1>Badge</h1>
+            <h4>Badge generates a small badge to the top-right of its child(ren).</h4>
+        </div>
+        <div class="main-content">
+            <div class="main-content__box">
+                <div class="box-heading">Badges on Avatars</div>
+                <div class="box-description">Want to make avatars with badges?
+                </div>
+                <div class="badge-container">
+                    <div class="badge">
+                        <img src="./img/img_avatar.png" class="avatar avatar-lg" alt="avatar-large">
+                        <span class="badge-avatar status-online"></span>
+                    </div>
+                    <div class="badge">
+                        <img src="./img/img_avatar.png" class="avatar avatar-md" alt="avatar-medium">
+                        <span class="badge-avatar status-away"></span>
+                    </div>
+                    <div class="badge">
+                        <img src="./img/img_avatar.png" class="avatar avatar-sm" alt="avatar-small">
+                        <span class="badge-avatar status-dnd"></span>
+                    </div>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522avatar%2520avatar-lg%2522%2520alt%253D%2522...%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-avatar%2520status-online%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522avatar%2520avatar-md%2522%2520alt%253D%2522...%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-avatar%2520status-away%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522avatar%2520avatar-sm%2522%2520alt%253D%2522...%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-avatar%2520status-dnd%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 430px; height: 321px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="box-heading">Badges on Icons</div>
+                <div class="box-description">Badges can be implemented on Icons.
+                </div>
+                <div class="badge-container">
+                    <div class="badge">
+                        <span class="material-icons-outlined md-36">
+                            shopping_bag
+                        </span>
+                        <span class="badge-icon number">2</span>
+                    </div>
+                    <div class="badge">
+                        <span class="material-icons-outlined md-36">
+                            notifications
+                        </span>
+                        <span class="badge-icon number">4</span>
+                    </div>
+                </div>
+                <div class="display-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522material-icons-outlined%2520md-36%2522%253E%250A%2509%2509%2509shopping_bag%250A%2509%2509%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-icon%2520number%2522%253E2%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522material-icons-outlined%2520md-36%2522%253E%250A%2509%2509%2509notifications%250A%2509%2509%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge-icon%2520number%2522%253E4%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 389px; height: 321px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
