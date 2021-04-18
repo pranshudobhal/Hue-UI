@@ -850,7 +850,7 @@ a.active {
   font-weight: 400;
   color: RGB(117, 117, 117);
   font-size: 0.875rem;
-  padding: 0.25rem 0 2rem;
+  padding: 0.25rem 0 1rem;
   display: flex;
   justify-content: space-between;
   position: relative;
