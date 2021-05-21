@@ -735,7 +735,8 @@ a.active {
   font-weight: 400;
   color: RGB(117, 117, 117);
   font-size: 0.875rem;
-  padding: 0.25rem 0 2rem;
+  padding: 0.25rem 0 0;
+  margin-bottom: 2rem;
 }
 
 .card.card-image .card-price {
