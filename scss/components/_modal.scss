@@ -1,0 +1,91 @@
+/* Modal Component Styles Start */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: transparentize($primary-color, 0.4);
+}
+
+.modal-content {
+  background-color: $white;
+  margin: auto;
+  padding: 1.25rem;
+  position: relative;
+  border: 1px solid $grey;
+  width: 60%;
+  height: auto;
+  max-width: 400px;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+
+  span:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .modal-close {
+    color: $grey;
+    font-size: 3rem;
+
+    @include media-md {
+      font-size: 2rem;
+    }
+  }
+}
+
+.modal-description {
+  margin-bottom: 2rem;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  button {
+    margin-left: 0.5rem;
+    width: 50%;
+
+    @include media-md {
+      margin-left: 1rem;
+      width: 25%;
+    }
+  }
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: $primary-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Modal Component Styles End */

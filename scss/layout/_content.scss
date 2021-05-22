@@ -1,0 +1,97 @@
+/* Main Content Styles Start */
+
+.main {
+  text-align: left;
+
+  @include media-md {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  &-topic {
+    padding: 2.5rem 1rem;
+    border-bottom: 1px solid $border-color;
+    @include transition-ease;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.6;
+    }
+
+    @include media-md {
+      &.open {
+        width: 55vw;
+      }
+
+      &-topic {
+        padding: 3.5rem 1rem;
+      }
+    }
+  }
+
+  &-content {
+    @include media-md {
+      &.open {
+        width: 55vw;
+      }
+    }
+
+    &__box {
+      padding: 2rem 1rem;
+
+      .box {
+        &-heading {
+          font-size: 1.75rem;
+          font-weight: 700;
+          opacity: 0.9;
+        }
+
+        &-description {
+          font-size: 1rem;
+          opacity: 0.8;
+          margin-bottom: 2rem;
+
+          ul {
+            padding: 1rem 0 1rem 2rem;
+
+            li {
+              padding: 0.5rem 0;
+            }
+          }
+
+          code {
+            font-size: 0.875rem;
+            color: $code-color;
+            word-wrap: break-word;
+            padding-right: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.display-code {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  max-width: 375px;
+  border-bottom: 1px solid $border-color;
+
+  @include media-md {
+    margin: 2rem 0 4rem 0;
+    padding-bottom: 4rem;
+    max-width: 50vw;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+}
+
+/* Main Content Styles End */

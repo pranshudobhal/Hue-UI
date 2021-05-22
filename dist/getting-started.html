@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/hue.png">
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Getting Started | Hue UI</title>
+</head>
+
+<body>
+  <main class="main">
+
+    <div id="mySidenav" class="sidenav">
+
+      <a href="getting-started.html" class="active"> Getting Started </a>
+      <a href="avatar.html"> Avatar </a>
+      <a href="alert.html"> Alert </a>
+      <a href="badge.html"> Badge </a>
+      <a href="button.html"> Button </a>
+      <a href="card.html"> Card </a>
+      <a href="image.html"> Image </a>
+      <a href="input.html"> Input </a>
+      <a href="modal.html"> Modal </a>
+      <a href="list.html"> List </a>
+      <a href="rating.html"> Rating </a>
+      <a href="utilities.html"> Utilities </a>
+      <a href="navigation.html"> Navigation </a>
+      <a href="grid.html"> Grid </a>
+    </div>
+
+
+    <div class="menu-container">
+            <div class="menu-logo">
+                <a href="index.html">HUE UI</a>
+            </div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+        </div>
+
+    <div class="main-topic">
+      <h1>Getting Started</h1>
+      <h4>Getting up and running with Hue UI</h4>
+    </div>
+    <div class="main-content">
+      <div class="main-content__box">
+        <div class="box-heading">Installing</div>
+        <div class="box-description">Looking to quickly add Hue to your project?
+        </div>
+
+        <div class="box-heading">CSS</div>
+        <div class="box-description">
+          Copy-paste the stylesheet <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> to load our CSS.
+        </div>
+        <div class="display-code">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fhue-ui.vercel.app%252Fcss%252Fmain.css%2522%2520%252F%253E"
+            style="width: 518px; height: 92px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+
+        <div class="box-heading">JS</div>
+        <div class="box-description">Many of our components require the use of JavaScript to function. Place our script
+          at the end of your page content, right before the closing
+          <code>&lt;body&gt;</code> tag, to enable them.
+        </div>
+        <div class="display-code">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cscript%2520src%253D%2522https%253A%252F%252Fhue-ui.vercel.app%252Fjs%252Fmain.js%2522%253E%253C%252Fscript%253E"
+            style="width: 443px; height: 92px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+
+
+        <div class="box-heading">Starter template</div>
+        <div class="box-description">Be sure to have your pages set up with the latest design and development standards.
+          That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it
+          all together and your pages should look like this:
+        </div>
+        <div class="display-code">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&ds=true&dsyoff=14px&dsblur=31px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Inconsolata&fs=13.5px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21DOCTYPE%2520html%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%250A%253Chead%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522UTF-8%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520http-equiv%253D%2522X-UA-Compatible%2522%2520content%253D%2522IE%253Dedge%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1.0%2522%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Hue%2520CSS%2520--%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fhue-ui.vercel.app%252Fcss%252Fmain.css%2522%2520%252F%253E%250A%250A%2520%2520%2520%2520%253Ctitle%253EHello%252C%2520Hue%21%253C%252Ftitle%253E%250A%253C%252Fhead%253E%250A%250A%253Cbody%253E%250A%250A%2520%2520%2520%2520%253Ch1%253EHello%252C%2520Hue%21%253C%252Fh1%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Hue%2520JS%2520--%253E%250A%2520%2520%2520%2520%253Cscript%2520src%253D%2522https%253A%252F%252Fhue-ui.vercel.app%252Fjs%252Fmain.js%2522%253E%253C%252Fscript%253E%250A%253C%252Fbody%253E%250A%250A%253C%252Fhtml%253E"
+            style="width: 544px; height: 479px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
