@@ -1,8 +1,8 @@
 /* Resetting Styles Start */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -254,7 +254,7 @@ a {
 }
 
 .sidenav a {
-  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  padding: 1rem 0.5rem 0.5rem 2rem;
   text-decoration: none;
   font-size: 1rem;
   color: #272727;
