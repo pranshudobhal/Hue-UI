@@ -1,0 +1,60 @@
+/* Alert Component Styles Start */
+
+.alerts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.alert {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1rem;
+
+  &#{&}-error {
+    color: $error-color;
+    background-color: $error-background-color;
+
+    span:first-child {
+      color: $error-icon-color;
+      margin-right: 1rem;
+    }
+  }
+
+  &#{&}-warning {
+    color: $warning-color;
+    background-color: $warning-background-color;
+
+    span:first-child {
+      color: $warning-icon-color;
+      margin-right: 1rem;
+    }
+  }
+
+  &#{&}-info {
+    color: $info-color;
+    background-color: $info-background-color;
+
+    span:first-child {
+      color: $info-icon-color;
+      margin-right: 1rem;
+    }
+  }
+
+  &#{&}-success {
+    color: $success-color;
+    background-color: $success-background-color;
+
+    span:first-child {
+      color: $success-icon-color;
+      margin-right: 1rem;
+    }
+  }
+}
+
+/* Alert Component Styles End */

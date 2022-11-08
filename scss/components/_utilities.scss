@@ -1,0 +1,97 @@
+/* Utilities Component Styles Start */
+
+.heading-container * {
+  font-weight: 700;
+}
+
+h1,
+.fs-6 {
+  font-size: 3rem;
+}
+
+h2,
+.fs-5 {
+  font-size: 2.5rem;
+}
+
+h3,
+.fs-4 {
+  font-size: 2rem;
+}
+
+h4,
+.fs-3 {
+  font-size: 1.75rem;
+}
+
+h5,
+.fs-2 {
+  font-size: 1.5rem;
+}
+
+h6,
+.fs-1 {
+  font-size: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.error-color {
+  color: $error-icon-color;
+}
+
+.warning-color {
+  color: $warning-icon-color;
+}
+
+.success-color {
+  color: $success-icon-color;
+}
+
+.text-strike {
+  text-decoration: line-through;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+/* Utilities Component Styles End */

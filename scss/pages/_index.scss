@@ -1,0 +1,38 @@
+/* Landing Page Styles Start */
+
+.index-main {
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  @include media-md {
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.highlight {
+  color: $secondary-color;
+}
+
+/* Landing Page Styles End */
